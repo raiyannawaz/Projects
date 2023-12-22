@@ -132,7 +132,7 @@ button:focus:not(:focus-visible) {
     width: 100%;
     content: '';
     top: 0;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
     z-index: 5;
 }
 
@@ -241,6 +241,9 @@ li a{
     }
     .toggle-ul{
         left: 0;
+    }
+    .about-boxes p{
+        text-align: center;
     }
     .reff{
         height: auto !important;
