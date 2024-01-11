@@ -16,7 +16,7 @@
 }
 
 /* Section  */
-section{
+section#header{
     height: 100vh;
     width: 100%;
     background: var(--color-1);
@@ -197,16 +197,19 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .project-row{
     height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    overflow: hidden;
-    padding: 1rem 0;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 3rem;
+}
+
+.project-row a{
+    justify-self: center;
 }
 
 .project-row .card{
@@ -238,7 +241,7 @@ a{
     height: 100%;
     width: 100%;
     content: '';
-    background: linear-gradient(#ffffffd5, #2a75ca), url('./img/Portfolio.jpeg');
+    background: linear-gradient(#ffffff65, #2a75ca), url('./img/Decor\ Pro.png');
     background-size: 100% 100%;
     border-radius: 10px;
     z-index: -1;
@@ -250,7 +253,7 @@ a{
     height: 100%;
     width: 100%;
     content: '';
-    background: linear-gradient(#ffffff00, #2a75ca00), url('./img/Portfolio.jpeg');
+    background: linear-gradient(#ffffff00, #2a75ca00), url('./img/Decor\ Pro.png');
     background-size: 100% 100%;
     border-radius: 10px;
     z-index: 1; 
@@ -262,7 +265,7 @@ a{
     height: 100%;
     width: 100%;
     content: '';
-    background: linear-gradient(#ffffff65, #2a75ca), url('./img/Decor\ Pro.png');
+    background: linear-gradient(#ffffff65, #2a75ca), url('./img/chartproject.png');
     background-size: 100% 100%;
     border-radius: 10px;
     z-index: -1;
@@ -274,7 +277,31 @@ a{
     height: 100%;
     width: 100%;
     content: '';
-    background: linear-gradient(#ffffff00, #2a75ca00), url('./img/Decor\ Pro.png');
+    background: linear-gradient(#ffffff00, #2a75ca00), url('./img/chartproject.png');
+    background-size: 100% 100%;
+    border-radius: 10px;
+    z-index: 1; 
+    opacity: 1;
+}
+
+.card#project3::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: linear-gradient(#ffffff65, #2a75ca), url('./img/E-commerce.jpeg');
+    background-size: 100% 100%;
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 1;
+}
+
+.card#project3:hover::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: linear-gradient(#ffffff00, #2a75ca00), url('./img/E-commerce.jpeg');
     background-size: 100% 100%;
     border-radius: 10px;
     z-index: 1; 
@@ -437,7 +464,7 @@ a{
     }
 
     .project-row .card{
-        height: 150px;
+        height: 175px;
         width: 275px;
         margin-bottom: 2rem;
     }
